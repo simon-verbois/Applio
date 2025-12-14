@@ -5,6 +5,8 @@ printf "\033]0;Installer\007"
 clear
 rm -f *.bat  
 
+export UV_HTTP_TIMEOUT=600
+
 # Function to log messages with timestamps
 log_message() {
     local msg="$1"
